@@ -1,0 +1,12 @@
+ // Assuming your additional services are stored in another file called 'additional-services.html'
+    fetch('additional-services.html')
+      .then(response => response.text())
+      .then(data => {
+        // Append the additional services to the existing services section
+        document.getElementById('services').insertAdjacentHTML('beforeend', data);
+        
+        // Hide the "Load more" link after loading additional services
+        document.getElementById('load-more').style.display = 'none';
+      })
+      .catch(error => console.error('Error loading additional services:', error));
+  }

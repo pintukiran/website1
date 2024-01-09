@@ -1,0 +1,290 @@
+body {
+    font-family: arial, Helvetica, sans-serif;
+}
+
+/* Header top social media icons starts */
+.header_top {
+    width: 100%;
+    background-color: #FFF5E1;
+    overflow: auto;
+    height: 50px;
+    line-height: 50px;
+}
+
+.header-top-rit-sec ul.social-icons {
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 24px;
+}
+
+.header-top-rit-sec ul.social-icons li {
+    margin-right: 20px;
+}
+
+.header-top-rit-sec ul.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.header-top-rit-sec ul.social-icons li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Header top social media icons ends */
+
+/* Logo, menu, whatsapp image */
+.menu {
+    background-color: #3e320c;
+    height: 100px;
+    line-height: 100px;
+}
+
+.menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-btn {
+    display: none;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.main_menu {
+    list-style: none;
+    margin-left: auto;
+}
+
+.main_menu ul#menu-main-menu {
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main_menu ul#menu-main-menu li {
+    margin-right: 20px;
+}
+
+.main_menu ul#menu-main-menu li:last-child {
+    margin-right: 0;
+}
+
+.main_menu ul#menu-main-menu li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.header_bottom_right_widget_holder {
+    display: flex;
+    align-items: auto;
+    margin-top: 40px;
+}
+
+.header_bottom_right_widget_holder a {
+    margin-left: 20px;
+}
+
+
+/* Add a media query for smaller screens */
+@media only screen and (max-width: 767px) {
+    .menu .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_menu ul#menu-main-menu {
+        display: none; /* Hide the entire menu on small screens */
+    }
+
+    .header_bottom_right_widget_holder {
+        display: none; /* Hide the entire widget holder on small screens */
+    }
+}
+
+
+/* Services */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF5E1; /* Change background color to black */
+    color: #000; /* Change text color to white */
+}
+
+header {
+    background-color: #FFF5E1;
+    color: #3e320c;
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #3e320c; /* Change background color to black */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service {
+    margin: 20px;
+    text-align: center;
+    width: calc(33.3333% - 40px); /* Adjust width to accommodate three services in a row with margin */
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    background-color: #FFF5E1; /* Change background color of the cards to white */
+    display: flex;
+    flex-direction: column;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service img {
+    max-width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.service-content {
+    padding: 20px;
+}
+
+.service h3 {
+    color: #FFF5E1; /* Change text color of the heading to a dark grey */
+}
+
+.service .text {
+    color: #000 !important;
+    flex: 1; /* Make the text area flexible to take remaining space */
+}
+
+/* Add animation styles for slideInLeft */
+.wow {
+    visibility: hidden;
+}
+
+.slideInLeft {
+    animation-name: slideInLeft;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.love-back-section .text {
+    font-size: 16px; /* Adjust the font size as needed */
+    font-family: 'Your Desired Font', sans-serif; /* Change 'Your Desired Font' to the actual font you want to use */
+    font-weight: bold; /* Adjust the font weight as needed */
+    /* You can add more styles as needed, such as color, text-transform, etc. */
+}
+
+/* Add new style for contact box */
+.contact-box {
+    background-color: #333; /* Change the background color as needed */
+    color: #fff; /* Change the text color as needed */
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px; /* Adjust margin as needed */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add hover effect to contact box */
+.contact-box:hover {
+    background-color: #555; /* Change the background color on hover as needed */
+    transform: scale(1.05);
+}
+
+/* Style for the "Contact Now" link */
+.contact-box a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Change link color on hover */
+.contact-box:hover a {
+    color: #ffd700; /* Change the link color on hover as needed */
+}
+
+footer {
+    background-color: #3e320c;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ... (previous CSS code) ... */
+
+@media only screen and (max-width: 767px) {
+    /* Add your mobile styles here */
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    header {
+        padding: 10px 20px; /* Increase padding for better spacing on small screens */
+    }
+
+    section {
+        padding: 10px; /* Adjust padding for better spacing on small screens */
+        background-color: #FFF5E1; /* Change background color for better contrast */
+    }
+
+    .service {
+        width: 100%; /* Set width to 100% for full-width on small screens */
+        margin: 10px 0; /* Adjust margin for better spacing on small screens */
+    }
+
+    .service img {
+        border-top-left-radius: 0; /* Remove border radius for better image display */
+        border-top-right-radius: 0;
+    }
+
+    .service-content {
+        padding: 10px;
+    }
+
+    .service h3 {
+        color: #3e320c; /* Adjust text color for better visibility */
+    }
+
+    /* Add more styles as needed */
+}
+
